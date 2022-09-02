@@ -5,8 +5,8 @@
 }
 
 header{
-    background-image: url("https://picsum.photos/500");
-    background-repeat: no-repeat;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/475/549/original/colorful-firework-background-free-vector.jpg");
+ background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
    display: flex;
@@ -26,16 +26,25 @@ header{
    }
    .menu li a{
     text-decoration: none;
+    font-weight: bold;
+    color: white;
 }
 
-/*
-audio{
-    display: none;
+.tittle{
+    margin-left: 20px;
+    color: white;
 }
-*/
-   .wave{
-       fill: #fff;
-   }
+
+audio{
+margin-left: 20px;
+}
+body{
+    background-color: blueviolet;
+    
+    }
+    .wave{
+        fill: blueviolet;
+    }
    
    .picfig{
        margin:20px 0 20px;
@@ -53,7 +62,7 @@ audio{
    
    }
 
-.contenedor {
+   .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,13 +71,14 @@ audio{
 
 .wavy {
     position: relative;
+    padding-top: 40px;
 }
 
 .wavy span {
     position: relative;
     display: inline-block;
-    color: #fff;
-    font-size: 2em;
+    color: rgb(142, 27, 4);
+    font-size: 4em;
     text-transform: uppercase;
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
@@ -90,7 +100,7 @@ audio{
 }
 
 .seccion{
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     padding-bottom: 60px;}
 
 .container-fluid{
