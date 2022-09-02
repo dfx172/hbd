@@ -24,7 +24,9 @@ header{
     list-style: none;
    
    }
-   
+   .menu li a{
+    text-decoration: none;
+}
    .wave{
        fill: #fff;
    }
@@ -80,7 +82,14 @@ header{
         transform: translateY(0px);
     }
 }
-
+.tittle{
+    color: blueviolet;
+}
+/*
+audio{
+    display: none;
+}
+*/
 .seccion{
     padding-top: 60px;
     padding-bottom: 60px;}
