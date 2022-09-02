@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("https://picsum.photos/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   }
+   
+   .menu {
+   display: flex;
+   gap: 20px;
+   justify-content: flex-end;
+   }
+   
+   .menu li{
+    list-style: none;
+   
+   }
+   
+   .wave{
+       fill: #fff;
+   }
+   
+   .picfig{
+       margin:20px 0 20px;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .picfig img{
+       width: 200px;
+       height: 200px;
+   }
+   
+   .header_p{
+       padding: 0 10px;
+   
+   }
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+  }
+
+.wavy {
+    position: relative;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.seccion{
+    padding-top: 60px;
+    padding-bottom: 60px;}
+
+    .container-fluid{
+        width: 100%;          /* para que abarque todo el ancho de la pantalla*/ 
+        padding-left: 15px;
+        padding-right: 15px;}
+
+        .row{
+            display: flex;  /*para mostrar los subsistemas en el espacio, ejm columnas*/
+            flex-wrap: wrap;       /*para que si una columna no cabe en el espacio, la ponga debajo, lo contrario "nowrap" obligaria a todas a caber en uan fila pero se podria ver raro*/
+            margin-left: -15px;
+            margin-right: -15px;}
+            .columna-33{
+                width: 33.33%;}
+                .cuadrado-perfecto {
+                    width: 100%; padding-bottom: 100%; position: relative;}
+                    #galeria h4{
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        position: absolute;
+                        color: white;
+                        text-align: center;
+                        font-size: 25px;
+                        top: 45%;
+                        width: 100%;}
+                    
+                    #galeria img{
+                        filter: grayscale(1);}          /*imagen a blanco y negro*/
+                    
+                    #galeria .cuadrado-perfecto:hover img{  /*con :hover es para que algo pase cuando pongo el puntero sobre esto*/
+                        filter: grayscale(0);}
+                    
+                    #galeria .cuadrado-perfecto:hover h4{
+                        display: none;}             /*no se muestra*/
+
+
+@media(max-width:767px)
+{
+    .columna-mobile-50{
+        width: 50%;}
+
+}
